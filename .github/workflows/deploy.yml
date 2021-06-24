@@ -16,6 +16,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME}} # User of the server you want to ssh int
      
           script: |
-            cd /var/www/website_folder 
+            mkdir /home/ubuntu/samplerepo4
+            cd /home/ubuntu/samplerepo4
             git clone https://github.com/Rajesh8688/gittest.git
             echo 'Deployment successful to digital ocean'
